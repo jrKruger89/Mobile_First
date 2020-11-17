@@ -5,11 +5,20 @@
 }
 
 html {
+    background: url(../img/background.png) no-repeat center;
     font-size: 100%;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Istok Web', sans-serif;
+}
+
+header {
+    background-color: #fffff4;
+}
+
+h1 {
+    text-align: center;
 }
 
 
@@ -20,7 +29,7 @@ body {
     cursor: pointer;
     margin: auto 0px;
     position: absolute;
-    top: 18px;
+    top: 1.5rem;
     right: 10px;
 }
 
@@ -60,11 +69,6 @@ body {
     z-index: 2;
 }
 
-.logo img {
-    height: 50px;
-    width: 62.5px;
-}
-
 ul {
     list-style-type: none;
 }
@@ -78,33 +82,35 @@ ul {
 }
 
 .nav_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
 }
 
 .nav_item a {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 1.3em;
-    color: antiquewhite;
     margin: auto 10px;
-    height: 100%;
 }
 
 .sub_nav_item {
     padding: 5px 15px;
 }
 
-.sub_nav_item a {
-    color: antiquewhite;
+a {
+    color:#fffff4;
+    text-decoration: none;
 }
 
 
 .fa {
+    color: #fffff4;
     font-size: 1.5em;
     text-align: center;
     font-weight: bold;
     width: 35px;
-    border: 2px solid antiquewhite;
+    border: 2px solid #fffff4;
     border-radius: 10%;
+    margin-right: 10px;
 }
