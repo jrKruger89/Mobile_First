@@ -2,6 +2,7 @@ $(document).ready(function(){
 	$('.nav_icon').click(function(){
         $(this).toggleClass('open');
         $('.navigation_list').slideToggle();
+        $('.sub_nav').slideUp();
     });
     
     $('#toggle_sub_1').click(function() { 
