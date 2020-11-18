@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url(../img/background.png) no-repeat center;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Istok Web', sans-serif;
+}
+
+header {
+    background-color: #ffff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/*---------- Menu BTN animation ----------*/
+
+.nav_icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: auto 0px;
+    position: absolute;
+    top: 1.2rem;
+    right: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #707070;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.open .bar1 {
+    transform: rotate(-45deg) translate(-6px, 4px);
+}
+
+/* Fade out the second bar */
+.open .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.open .bar3 {
+    transform: rotate(45deg) translate(-6px, -4px);
+}
+
+/*----------  ----------*/
+
+/*---------- Navigation Styling ----------*/
+
+.page_navigation {
+    width: 100%;
+    background-color: #BCFDE1;
+    position: absolute;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navigation_list {
+    display: none;
+}
+
+.sub_nav {
+    display: none;
+}
+
+.nav_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.nav_item a {
+    align-items: center;
+    font-size: 1.3em;
+    margin: auto 10px;
+}
+
+.sub_nav_item {
+    padding: 5px 15px;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+}
+
+
+.fa {
+    color: #707070;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    width: 35px;
+    border: 2px solid #ffff;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+/* --------Mit er gældende fra 500px og ned ----------- */
+
+
+/* Hero img + text */
+/*
+main {
+    height: 430px;
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/workplace_small.jpg) no-repeat;
+    position: relative;
+    height: 275px;
+}
+*/
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/workplace_small.jpg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.hero h1 {
+    line-height: 1em;
+    margin: 0 0 10px 0;
+    color: #ffff;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #ffff;
+}
+
+a.btn {
+    text-decoration: none;
+    color: #ffff;
+    border: 1px solid #ffff;
+    padding: 3px 3px;
+    transition: background-color .5s;
+}
+
+
+/* Event section */
+
+main h2 {
+    text-align: center;
+    background: #A7FFD9;
+    padding: 20px;
+    color: #707070;
+    margin-top: 20px;
+}
+
+.container {
+    color: #ffff;
+    text-align: center;
+}
+
+.box {
+    width: calc(350px - 60px);
+    height: calc(300px - 30px);
+    background: #31B37A;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+
+/* Medlemsfordele */
+
+.fordele {
+    color: black;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.fordele_overskrift {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+/* Medium devices (landscape tablets, 780px and up) */
+@media only screen and (min-width: 780px) {}
+
+
+/* Large devices (laptops/desktops, 1075px and up) */
+@media only screen and (min-width: 1075px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav_icon {
+        display: none;
+    }
+
+    .page_navigation {
+        max-width: 80%;
+        position: relative;
+        background-color: #A7FFD9;
+    }
+
+    .navigation_list {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .has_children:hover .sub_nav {
+        display: none;
+    }
+
+    .sub_nav {
+        position: absolute;
+        top: 45px;
+        background-color: #A7FFD9;
+        border-radius: 5%;
+    }
+
+    /* Det her er absolut ikke den rigtige måde at gøre det på men jeg er lidt i tidskneb */
+
+    .sub_menu_1 {
+        right: 673px;
+    }
+
+    .sub_menu_2 {
+        right: 102px;
+    }
+
+}
