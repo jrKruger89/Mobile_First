@@ -128,6 +128,10 @@ main {
 }
 */
 
+.page_title {
+    text-align: center;
+}
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Workplace.jpg) center no-repeat;
     display: flex;
@@ -206,9 +210,7 @@ a.btn_2 {
 .container {
     color: #ffff;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: block;
 }
 
 .box {
@@ -216,6 +218,11 @@ a.btn_2 {
     height: calc(300px - 30px);
     background: #31B37A;
     margin: 20px auto;
+}
+
+.box_wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Centrering af links */
@@ -251,7 +258,6 @@ border-radius: 10px; */
 }
 
 .bullets {
-    display: list-item;
     background: #ffff;
     color: #707070;
     padding: 20px;
@@ -303,7 +309,7 @@ Footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #A7FFD9;
+        background-color: #ffff;
     }
 
     .nav_icon {
@@ -313,7 +319,7 @@ Footer {
     .page_navigation {
         max-width: 80%;
         position: relative;
-        background-color: #A7FFD9;
+        background-color: #ffff;
     }
 
     .navigation_list {
