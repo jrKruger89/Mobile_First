@@ -129,13 +129,13 @@ main {
 */
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/workplace_small.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Workplace.jpg) center no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 
 .hero h1 {
@@ -172,13 +172,11 @@ a.btn {
     padding: 20px;
     color: #707070;
     margin-top: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
 }
 
 a.btn_2 {
     text-decoration: none;
-    text-align: center; 
+    text-align: center;
     color: #707070;
     border: 1px solid #707070;
     padding: 3px 3px;
@@ -186,22 +184,31 @@ a.btn_2 {
     transition: background-color .5s;
 }
 
-.content a {
+.box_header a {
     font-size: 25px;
     color: #ffff;
     text-decoration: underline;
 }
-.content strong {
+
+.box_header strong {
     font-size: 18px
 }
 
-.content i {
+.box_content i {
     font-size: 15px;
+    height: 150px;
+}
+
+.box:hover {
+    box-shadow: 4px 4px #707070;
 }
 
 .container {
     color: #ffff;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -209,6 +216,12 @@ a.btn_2 {
     height: calc(300px - 30px);
     background: #31B37A;
     margin: 20px auto;
+}
+
+/* Centrering af links */
+
+.page_link {
+    text-align: center;
 }
 
 /* Runde bokse:
@@ -238,17 +251,18 @@ border-radius: 10px; */
 }
 
 .bullets {
-   display: list-item;
+    display: list-item;
     background: #ffff;
     color: #707070;
     padding: 20px;
     margin-left: 35px;
     margin-right: 35px;
+    list-style-type: disc;
 }
 
 a.btn_3 {
     text-decoration: none;
-    text-align: center; 
+    text-align: center;
     color: #707070;
     border: 1px solid #707070;
     padding: 3px 3px;
@@ -289,6 +303,7 @@ Footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background-color: #A7FFD9;
     }
 
     .nav_icon {
@@ -306,8 +321,12 @@ Footer {
         justify-content: flex-end;
     }
 
-    .has_children:hover .sub_nav {
-        display: none;
+    .sub_nav_item:hover {
+        background-color: #31B37A;
+    }
+
+    .sub_nav_item a:hover {
+        color: #ffff;
     }
 
     .sub_nav {
@@ -325,6 +344,14 @@ Footer {
 
     .sub_menu_2 {
         right: 102px;
+    }
+
+    /*--------------------*/
+
+    main {
+        max-width: 80%;
+        margin: 0px auto;
+
     }
 
 }
